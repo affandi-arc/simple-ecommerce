@@ -1,0 +1,115 @@
+/* products */
+.products-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .product{
+    text-transform: capitalize;
+    width: 350px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 24px;
+    transition: all 0.3s ease-in-out;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    border: 1px solid #18171702;; 
+  }
+  
+  .product:hover {
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media(min-width: 768px){
+    .product{
+      width: 300px;
+    }
+  }
+  
+  .product .product-img{
+    width: 216px;
+    height: 215px;
+    border: #23232213 1px solid ; 
+}
+
+.product .product-img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product .product-text{
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;  
+  }
+  
+  .product .product-text.title{
+    color: #e00a02;  
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .product .product-text.description{
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .product .product-text.price{
+    font-weight: 600;
+  }
+  
+  .product .product-text.cart-price{
+    font-weight: 600;
+    color: #e00a02;
+  }
+  
+  .cart-btn{
+    background-color: #e00a02 !important;
+  }
+  
+  .cart-menu-btn{
+    position: relative;  
+  }
+  
+  .cart-menu-btn .cart-indicator{
+    width: 18px;
+    background-color: #e00a02;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product .quantity-box{
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid #b9b5b5;
+    border-radius: 8px;
+  }
+  
+  .product .quantity-box .action-btns{
+    font-weight: 600;
+    cursor: pointer;
+  }
