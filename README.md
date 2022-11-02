@@ -1,5 +1,6 @@
 # simple-ecommerce
- ###INSTALL
- npm install
- ###.env
- change the .env into your firebase settings
+ ### INSTALL
+ To run this app you should "npm install"
+ 
+ ### .env
+ change the .env into your firestore project
